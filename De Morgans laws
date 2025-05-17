@@ -1,0 +1,29 @@
+#logical Equivalence
+#De Morgan's laws
+#TODO--------------- [ VARIABLES ] --------------------#
+p = True
+q = False
+#!------------------- [ METHODS ] ---------------------#
+
+
+def Morgan_and(p, q):
+    return not ( p and q) , not p or not q 
+
+
+def Morgan_or(p, q):
+    return not ( p or q) , not p and not q 
+
+
+#?--------------------- [ MAIN ] ----------------------#
+_and1, _and2 = Morgan_and(p, q)
+_or1, _or2 = Morgan_or(p, q)
+
+
+result1 = _or1 == _or2
+result2 = _and1 == _and2
+
+
+print(" ")
+print("------------OUTPUT------------")
+print(f"¬(p AND q) [{_and1}] == ¬p OR ¬q [{_and2}]      > {result2}")
+print(f"¬(p OR q)  [{_or1}] == ¬p AND ¬q [{_or2}]     > {result1}")
