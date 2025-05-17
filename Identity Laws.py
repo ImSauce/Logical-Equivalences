@@ -1,4 +1,5 @@
 #logical Equivalence
+#identity laws
 #TODO--------------- [ VARIABLES ] --------------------#
 p = True
 
